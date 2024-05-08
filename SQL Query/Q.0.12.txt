@@ -1,0 +1,8 @@
+12.Retrieve the below data from above table
+Ans.
+      Retrieve All data from Salesperson-
+                   SELECT * FROM Salesperson;
+
+
+      Retrieve All data from Custome-
+                   SELECT * FROM Customer;

@@ -1,0 +1,35 @@
+Q.1
+CREATE TABLE Student(
+         Rollno int PRIMARY KEY AUTO_INCREMENT NOT null,
+         Name varchar(20),
+         Branch varchar(20)
+);
+
+INSERT INTO student(Rollno,Name,Branch) VALUES
+                   (1,"Jay","Computer Science"),
+                   (2,"Suhani","Electonic and Com"),
+                   (3,"Kriti","Electonic and Com")
+  
+            
+
+              2. table
+
+CREATE TABLE Exam(
+          srollno int,
+          FOREIGN KEY(srollno)REFERENCES student(Rollno),
+          S_code varchar(20),
+          Marks int,
+          P_code varchar(20)
+);
+             
+
+INSERT INTO exam(srollno,S_code,Marks,P_code) VALUES
+                (1,"CS11",50,"CS"),
+                (1,"CS12",60,"CS"),
+                (2,"EC101",66,"EC"),
+                (2,"EC102",70,"EC"),
+                (3,"EC101",45,"EC"),
+                (3,"EC102",50,"EC")
+
+                    
+
